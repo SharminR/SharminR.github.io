@@ -1,2 +1,2 @@
-# Check out my portfolio :D
-https://sharminr.github.io
+# Portfolio
+My current portfolio where you will find all my info!

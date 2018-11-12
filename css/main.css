@@ -264,6 +264,36 @@ main#home h1 {
   border-bottom: #f73c4f 5px solid;
 }
 
+.work-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'project1 project2';
+  grid-template-columns: 1fr 1fr;
+}
+
+.work-info .project-1 {
+  grid-area: project1;
+}
+
+.work-info .project-2 {
+  grid-area: project2;
+}
+
+.work-info .project {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #f73c4f 5px solid;
+}
+
+.work-info a {
+  transition: all 0.5s ease-out;
+}
+
+.work-info a:hover {
+  background-color: #f73c4f;
+}
+
 .dev-icons {
   font-size: 3rem
 }
@@ -298,14 +328,6 @@ main#home h1 {
   color: #000;
 }
 
-.column a {
-  transition: all 0.5s ease-out;
-}
-
-.column a:hover {
-  background-color: #f73c4f;
-}
-
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -323,8 +345,8 @@ main#home h1 {
 
 @media screen and (max-width: 768px) {
   main {
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
   }
 
   main .lg-heading {
@@ -363,6 +385,11 @@ main#home h1 {
 
   .about-info {
     grid-template-areas: 'bioimage''bio''des1''des2''des3';
+    grid-template-columns: 1fr;
+  }
+
+  .work-info {
+    grid-template-areas: 'project1''project2';
     grid-template-columns: 1fr;
   }
 }

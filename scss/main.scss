@@ -75,6 +75,7 @@ main {
   }
 }
 
+// About
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -116,7 +117,29 @@ main {
   }
 }
 
-// Work/Projects
+// Work
+.work-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'project1 project2';
+  grid-template-columns: 1fr 1fr;
+
+  .project-1 {
+    grid-area: project1;
+  }
+
+  .project-2 {
+    grid-area: project2;
+  }
+
+  .project {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
 
 // Contact Page
 .boxes {

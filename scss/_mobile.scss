@@ -7,8 +7,8 @@
 // Tablets & Small Laptops
 @include mediaMd {
   main {
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
 
     .lg-heading {
       line-height: 1;
@@ -51,6 +51,14 @@
       'des1'
       'des2'
       'des3';
+
+    grid-template-columns: 1fr;
+  }
+
+  .work-info {
+    grid-template-areas:
+      'project1'
+      'project2';
 
     grid-template-columns: 1fr;
   }
